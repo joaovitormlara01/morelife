@@ -1,0 +1,23 @@
+{
+  "name": "morelife",
+  "version": "1.0.0",
+  "description": "Site pessoal para organizar tarefas, compras, finanças e metas",
+  "homepage": "https://github.com/joaovitormlara01/morelife#readme",
+  "bugs": {
+    "url": "https://github.com/joaovitormlara01/morelife/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovitormlara01/morelife.git"
+  },
+  "license": "ISC",
+  "author": "Joao Vitor Lara",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --fundo: #f6f4ef;
+  --superficie: #ffffff;
+  --texto: #1f2a24;
+  --suave: #6b766f;
+  --destaque: #2f7d5b;
+  --borda: #e2ded3;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.5;
+}
+
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--superficie);
+  border-bottom: 1px solid var(--borda);
+}
+
+.marca { margin: 0; font-size: 1.5rem; font-weight: 700; }
+.marca span { color: var(--destaque); }
+
+.menu { display: flex; flex-wrap: wrap; gap: 4px; }
+.menu a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: var(--suave);
+  text-decoration: none;
+  font-weight: 500;
+}
+.menu a:hover { background: var(--fundo); color: var(--texto); }
+.menu a.ativo { background: var(--destaque); color: #fff; }
+
+.conteudo { max-width: 900px; margin: 0 auto; padding: 24px; }
+.secao h2 { margin-top: 0; }
+.aviso {
+  padding: 16px;
+  background: var(--superficie);
+  border: 1px dashed var(--borda);
+  border-radius: 12px;
+  color: var(--suave);
+}
